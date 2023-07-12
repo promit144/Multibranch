@@ -1,4 +1,4 @@
-node('built-in') 
+node('Master') 
 {
     stage('Continuous Download') 
 	{
@@ -8,4 +8,5 @@ node('built-in')
 	{
     sh label: '', script: 'mvn package'
 	}
-    
+}
+
